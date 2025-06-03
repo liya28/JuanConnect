@@ -1,0 +1,132 @@
+:root {
+  --primary-color: #14aa6c;
+  --dark-color: #2e4a62;
+  --neutral-dark: #444;
+  --light-bg: #f7f7f7;
+  --hover-dark: #111;
+  --border-radius: 8px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  font-family: 'Poppins', sans-serif;
+  color: var(--neutral-dark);
+  background: url('../Picture/background.jpg') no-repeat center center/cover;
+}
+
+.btn-info:hover {
+  box-shadow: 0 4px 16px rgba(20, 170, 108, 0.5);
+}
+
+.container {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+/* Navbar */
+.nav {
+  background-color: #2e4a62;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center; /* center links horizontally */
+  gap: 2rem; /* space between links */
+  padding: 12px 0;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 6px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav a:hover,
+.nav a:focus {
+  background-color: var(--primary-color);
+  color: white;
+  outline: none;
+  box-shadow: 0 0 8px var(--primary-color);
+}
+
+.nav a.active {
+  background-color: #607e2b;
+  color: white;
+  pointer-events: none;
+  box-shadow: 0 0 10px #99c74b;
+}
+
+/* Cards */
+.card {
+  background-color: #fff;
+  max-width: 320px;
+  min-height: 420px;
+  text-align: center;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  background-color: #f0f0f0;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+.card h4 {
+  margin-top: 15px;
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+.card .title {
+  font-size: 14px;
+  color: grey;
+  margin-bottom: 10px;
+}
+
+/* Modal Improvements */
+.modal-header h4,
+.modal-title {
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.modal-body {
+  color: var(--neutral-dark);
+}
+
+.table td,
+.table th {
+  font-size: 14px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .right {
+    margin: 60px 20px;
+  }
+
+  .nav a {
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+}
