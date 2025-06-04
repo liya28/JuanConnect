@@ -22,7 +22,7 @@ if (!isset($_SESSION['id'])) {
 
 <frameset rows="80%,5.5%" frameborder="0">
     <frameset cols="20%,80%">
-        <frame src="modules.php" name="FraLink">
+        <frame src="section-modules.php" name="FraLink">
         <frame src="Communication/dashboard.php" name="FraDisplay">
     </frameset>
     <frame src="footer.php" name="FraFooter">

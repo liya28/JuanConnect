@@ -1,0 +1,68 @@
+/* style-module-section.css */
+body {
+    background-color: #2E4A62;
+    margin: 0;
+    font-family: calibri;
+    color: white;
+}
+
+img {
+    filter: invert(100%);
+    padding: 0 10px 0 15px;
+}
+
+h1, h3 {
+    color: white;
+    font-family: calibri;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 5px;
+    font-size: 18px;
+    color: white;
+}
+
+a:hover {
+    background: #686868;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.banner {
+    padding: 12px 5px 15px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    background: #E94B3C;
+    font-family: calibri;
+    text-transform: uppercase;
+}
+
+.holder {
+    background: #212121;
+    width: 100%;
+    padding: 10px 0;
+    text-align: left;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8c8c8c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #141414;
+}
+
+.avatar {
+    border-radius: 30px;
+}
